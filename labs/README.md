@@ -1,3 +1,4 @@
+![CI](https://github.com/<you>/kcdc-devops-foundations/actions/workflows/ci.yml/badge.svg)
 # DevOps Foundations: From Code Commit to Production Confidence
 ## Hands-On Lab Guide — KCDC Workshop
 
