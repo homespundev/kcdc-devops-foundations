@@ -9,6 +9,9 @@ on:
 
 jobs:
   build-and-test:
+    strategy:
+      matrix:
+        dotnet: [10.0.x, 9.0.x]
     runs-on: ubuntu-latest
     steps:
       - name: Check out code
@@ -18,6 +21,7 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '10.0.x'
+          cache: true
 
       - name: Restore dependencies
         run: dotnet restore
